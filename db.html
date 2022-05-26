@@ -1,0 +1,44 @@
+<!-- db.html
+     Use a form to collect a query against the sailor database.
+     Call the PHP script, db.php to perform
+     the given query and display the results
+    -->
+<html>
+<head><title> Access to Sports Database </title>
+<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+<p>
+These are a few ways to access the Tarun and Bud Database
+<br />
+
+<p> Input the Student Number to find matching player information! </p>
+
+<form name = "f1" action = "http://css1.seattleu.edu/~jrobinson/dbtest/dbView.php" method = "post">
+    Student ID: <input type = "text" name = "sid" /> <br />
+    <input type = "reset"  value = "Reset" />
+    <input type = "submit"  value = "Submit request" />
+</form>    
+
+<br />
+<p> Input the option to see a descending list of the sum of player stats by team </p>
+<p> Options: Points Scored, Points Assisted, Games Played, MVP Number </p>
+
+<form name = "f2" action = "http://css1.seattleu.edu/~jrobinson/dbtest/dbSort.php" method = "post">
+    Search Options: <input type = "text" name = "opt" /> <br />
+    <input type = "reset"  value = "Reset" /> 
+    <input type = "submit"  value = "Submit request" /> 
+</form>   
+
+<br />
+<p> Input the Student ID of the player you wish to delete </p>
+
+<form name = "f3" action = "http://css1.seattleu.edu/~jrobinson/dbtest/dbDelete.php" method = "post">
+    Student ID: <input type = "text" name = "sid3" /> <br />
+	<input type ="reset" value = "Reset" />
+	<input type = "submit" value = "Submit request" /> 
+</form>
+
+</body>
+</html>
+
